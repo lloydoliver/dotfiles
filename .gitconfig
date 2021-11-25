@@ -1,10 +1,10 @@
 [user]
     email = lloyd.oliver@suchdevops.co.uk
     name = Lloyd Oliver
-	signingkey = 0x10A16862F507DEB8
+	  signingkey = 0x10A16862F507DEB8
 [alias]
     co = "!f() { git checkout -b \"$1\" 2> /dev/null || git checkout \"$1\"; }; f"
-    st = status -s
+    st = status -sb
     br = branch -a
     d = !"git diff-index --quiet HEAD -- || clear; git --no-pager diff --patch-with-stat"
     lg = log -n 20 --graph --pretty=format:'%Cred%h%Creset %G? :%C(yellow)%d%Creset %s %Cgreen(%cd, %C(bold green)%cr%Creset) %C(bold blue)<%an>%Creset' --abbrev-commit --date=local
@@ -22,16 +22,24 @@
 
 [diff]
     renames = copies
+    algorithm = patience
 
 [help]
     autocorrect = 1
 
+[log]
+    abbrevCommit = true
+    decorate = true
+
 [merge]
     ff = only
     log = true
+    tool = vimdiff
 
 [core]
-    excludesfile = /home/loliver/.config/dotfiles/git/gitignore
+    attributesgile = ~/.gitattributes
+    excludesfile = ~/.gitignore
+    editor = vim
     whitespace = space-before-tab,-indent-with-non-tab,trailing-space
     untrackedCache = true
 
