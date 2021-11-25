@@ -1,0 +1,6 @@
+*logs*
+*credentials*
+.config/gcloud/gcloud/**
+.gnupg/random_seed
+.weechat/weechat.log
+*.pyc

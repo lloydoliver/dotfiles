@@ -1,0 +1,62 @@
+[user]
+    email = lloyd.oliver@suchdevops.co.uk
+    name = Lloyd Oliver
+	signingkey = 0x10A16862F507DEB8
+[alias]
+    co = "!f() { git checkout -b \"$1\" 2> /dev/null || git checkout \"$1\"; }; f"
+    st = status -s
+    br = branch -a
+    d = !"git diff-index --quiet HEAD -- || clear; git --no-pager diff --patch-with-stat"
+    lg = log -n 20 --graph --pretty=format:'%Cred%h%Creset %G? :%C(yellow)%d%Creset %s %Cgreen(%cd, %C(bold green)%cr%Creset) %C(bold blue)<%an>%Creset' --abbrev-commit --date=local
+    pullff = pull --ff-only
+    unadd = reset HEAD
+    tags = tag -l
+    aliases = config --get-regexp alias
+    contributors = shortlog --summary --numbered
+
+[color]
+    ui = always
+
+[branch]
+    autosetuprebase = always
+
+[diff]
+    renames = copies
+
+[help]
+    autocorrect = 1
+
+[merge]
+    ff = only
+    log = true
+
+[core]
+    excludesfile = /home/loliver/.config/dotfiles/git/gitignore
+    whitespace = space-before-tab,-indent-with-non-tab,trailing-space
+    untrackedCache = true
+
+[push]
+    default = simple
+
+[rebase]
+    autostash = true
+
+[push]
+    default = simple
+    followTags = true
+
+[status]
+    showUntrackedFiles = all
+
+[fetch]
+    prune = true
+
+[commit]
+    gpgsign = true
+
+[gpg]
+    program = gpg
+
+[apply]
+    # detect whitespace errors when applying a patch
+    whitespace = fix
