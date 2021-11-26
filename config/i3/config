@@ -31,7 +31,6 @@ floating_modifier $mod
 
 ## autostart
 exec --no-startup-id compton -b
-exec --no-startup-id xsettingsd
 
 ## music is my only friend
 exec --no-startup-id mpd
@@ -71,8 +70,8 @@ bindsym XF86AudioPlay exec mpc toggle
 bindsym XF86AudioStop exec mpc stop
 
 ## screenshots
-bindsym Print        exec flameshot gui
-bindsym $mod+Print   exec flameshot full -c
+bindsym Print        exec flameshot full -c
+bindsym $mod+Print   exec flameshot gui
 
 ## program launcher
 bindsym $mod+d exec rofi -show drun
