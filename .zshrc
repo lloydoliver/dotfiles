@@ -7,6 +7,9 @@ eval `dircolors ~/.dircolors`
 export ZSH="$HOME/.oh-my-zsh"
 
 ZSH_THEME="agnoster"
+TERM=xterm
+
+ENABLE_CORRECTIONN="true"
 
 COMPLETION_WAITING_DOTS="true"
 DEFAULT_USER="loliver"
