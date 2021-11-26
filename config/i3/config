@@ -7,13 +7,13 @@ font pango:Roboto 8
 set $background #2f343f
 set $foreground #efefef
 set $black      #5b4848
-set $red	#cb6077
-set $green	#bec55b
-set $yellow	#e4bc87
-set $blue	#8ab3d5
+set $red	      #cb6077
+set $green	    #bec55b
+set $yellow	    #e4bc87
+set $blue	      #8ab3d5
 set $magenta    #a89bb9
-set $cyan	#7bcdb4
-set $white	#aaaaaa
+set $cyan       #7bcdb4
+set $white      #aaaaaa
 
 ## set workspaces
 set $ws1  "1: 1"
@@ -53,8 +53,8 @@ bindsym $mod+Shift+w exec firefox;workspace 2;focus
 ## file manager
 bindsym $mod+Shift+f exec thunar;workspace 3;focus
 
-## i3lock-fancy
-bindsym $mod+l exec i3lock-fancy
+## lock screen
+bindsym $mod+l exec xautolock --toggle
 
 ## kill focused window
 bindsym $mod+Escape kill
@@ -71,12 +71,11 @@ bindsym XF86AudioPlay exec mpc toggle
 bindsym XF86AudioStop exec mpc stop
 
 ## screenshots
-bindsym $mod+Print exec --no-startup-id screeny
-#bindsym $alt+Print exec --no-startup-id xfce4-screenshooter
+bindsym Print        exec flameshot gui
+bindsym $mod+Print   exec flameshot full -c
 
 ## program launcher
 bindsym $mod+d exec rofi -show drun
-bindsym $mod+Shift+d  exec dmenu-custom
 
 ## change focus
 bindsym $mod+Left focus left
@@ -201,7 +200,7 @@ assign [class=Firefox|Chromium|Opera|Transmission-gtk] 2
 ## workspace 3 (file-manager)
 assign [class=Thunar|File-roller] 3
 ## workspace 4 (text-editors)
-assign [class=Geany|libreoffice*|Wps|Et|Wpp] 4
+assign [class=Geany|libreoffice*|Wps|Et|Wpp|code] 4
 ## workspace 5 (graphic-utilities)
 assign [class=Nitrogen|Font-manager|Evince] 5
 ## workspace 6 (multimedia)
