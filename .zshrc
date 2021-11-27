@@ -60,3 +60,5 @@ done
 export GPG_TTY="$(tty)"
 export SSH_AUTH_SOCK=$(gpgconf --list-dirs agent-ssh-socket)
 gpgconf --launch gpg-agent
+
+dconf load /org/gnome/terminal/ < ~/.dotfiles/config/dconf/gnome-terminal
