@@ -10,4 +10,4 @@ echo '['
 echo '[],'
 
 # Now send blocks with information forever:
-exec conky -c $HOME/.config/i3/conkybar
+exec conky -c /home/loliver/.dotfiles/config/i3/conkybar
