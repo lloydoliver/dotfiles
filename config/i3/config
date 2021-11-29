@@ -14,6 +14,7 @@ set $blue	      #8ab3d5
 set $magenta    #a89bb9
 set $cyan       #7bcdb4
 set $white      #aaaaaa
+set $snow       #ffffff
 
 ## set workspaces
 set $ws1  "1: 1"
@@ -223,7 +224,7 @@ for_window [class=URxvt] floating enable
 # conkybar
 bar {
 
-    height 25
+    height 30
     workspace_buttons yes
     font pango:Noto Sans 8
     status_command /home/loliver/.dotfiles/config/i3/conkybar.sh
@@ -232,7 +233,7 @@ colors {
         statusline $foreground
         separator  $foreground
         # <border name>			<border>		<background>	<text>
-        focused_workspace		$background		$background		$red
+        focused_workspace		$background		$background		$snow
         active_workspace		$background		$background		$white
         inactive_workspace		$background		$background		$white
         urgent_workspace		$background		$background		$white
