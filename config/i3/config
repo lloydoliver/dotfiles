@@ -30,23 +30,15 @@ set $ws9  "9: 9"
 floating_modifier $mod
 
 ## autostart
-exec --no-startup-id compton -b
-
-## music is my only friend
-exec --no-startup-id mpd
+exec --no-startup-id compton -b -f
 
 ## set wallpaper
-exec --no-startup-id feh --bg-fill ~/.config/i3/wallpaper.jpg
+exec --no-startup-id feh --bg-fill ~/.dotfiles/config/i3/wallpaper.jpg
 
 ## keybind for launching a terminal
 bindsym $mod+Return exec gnome-terminal
 
-## keybind for launching alternative terminal
-bindsym $mod+Shift+Return exec urxvt
-
 ## start a web browser
-#bindsym $mod+Shift+w exec chromium;workspace 2;focus
-#bindsym $mod+Shift+w exec opera;workspace 2;focus
 bindsym $mod+Shift+w exec firefox;workspace 2;focus
 
 ## file manager
@@ -247,5 +239,4 @@ colors {
         }
 
     }
-
 
