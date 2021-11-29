@@ -1,0 +1,2 @@
+#include "/etc/regolith/styles/lascaille/root"
+gnome.wallpaper:  ~/.dotfiles/config/i3/wallpaper.jpg

@@ -33,9 +33,6 @@ floating_modifier $mod
 ## autostart
 exec --no-startup-id compton -b -f
 
-## set wallpaper
-exec --no-startup-id feh --bg-fill ~/.dotfiles/config/i3/wallpaper.jpg
-
 ## keybind for launching a terminal
 bindsym $mod+Return exec gnome-terminal
 
