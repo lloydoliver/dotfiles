@@ -9,7 +9,7 @@ list=['b1dcc9dd-5262-4d8d-a863-c897e6d979b9', 'aebf8f7f-2a8a-4688-b008-3d853fb90
 [legacy/profiles:/:aebf8f7f-2a8a-4688-b008-3d853fb902a9]
 audible-bell=false
 background-color='rgb(0,43,54)'
-background-transparency-percent=5
+background-transparency-percent=15
 bold-color='#77A8D9'
 bold-color-same-as-fg=false
 bold-is-bright=false
