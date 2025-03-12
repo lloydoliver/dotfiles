@@ -1,7 +1,6 @@
 [user]
-    email = lloyd.oliver@suchdevops.co.uk
+    email = lloyd@cypherworks.co.uk
     name = Lloyd Oliver
-	  signingkey = 0x10A16862F507DEB8
 [alias]
     co = "!f() { git checkout -b \"$1\" 2> /dev/null || git checkout \"$1\"; }; f"
     st = status -sb
