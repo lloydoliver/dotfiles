@@ -1,6 +1,16 @@
 " plugin loading with pathogen
 execute pathogen#infect()
 
+""" Plugin loading with vim-plug
+call plug#begin()
+
+" List your plugins here
+Plug 'tpope/vim-sensible'
+Plug 'luochen1990/rainbow'
+Plug 'neomake/neomake'
+
+call plug#end()
+
 """"""" defaults
 syntax on
 set nocompatible
@@ -11,6 +21,7 @@ filetype plugin indent on
 set t_Co=256
 set nofoldenable
 set mouse=
+set number
 call neomake#configure#automake('nrwi', 500)
 
 " disable ex mode
@@ -79,12 +90,7 @@ set colorcolumn=80
 highlight ColorColumn ctermbg=233
 
 """" PLUGIN SETTINGS
-" rainbow parentheses on
-au VimEnter * RainbowParenthesesToggle
-au Syntax * RainbowParenthesesLoadRound
-au Syntax * RainbowParenthesesLoadSquare
-au Syntax * RainbowParenthesesLoadBraces
-map <F12> :RainbowParenthesesToggle <CR>
+let g:rainbow_active = 1
 
 " airline
 set laststatus=2
