@@ -8,6 +8,7 @@ call plug#begin()
 Plug 'tpope/vim-sensible'
 Plug 'luochen1990/rainbow'
 Plug 'neomake/neomake'
+Plug 'vim-airline/vim-airline'
 
 call plug#end()
 
